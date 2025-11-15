@@ -1,0 +1,284 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  gap: 1rem;
+}
+
+.main-header {
+  flex: 1;
+}
+
+.language-selector select {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+.main-container {
+  display: flex;
+  flex: 1;
+  gap: 1rem;
+  padding: 0 2rem 2rem 2rem;
+}
+
+.sidebar {
+  width: 300px;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  height: fit-content;
+  position: sticky;
+  top: 1rem;
+}
+
+.sidebar h2 {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.sidebar-section {
+  margin-bottom: 1.5rem;
+}
+
+.sidebar-section h3 {
+  margin-bottom: 0.5rem;
+  color: #555;
+  font-size: 1.1rem;
+}
+
+.location-input {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.get-weather-btn {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.voice-input-section {
+  background: #f0f2f6;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.voice-input-section p {
+  margin: 0;
+  font-size: 0.9em;
+}
+
+.voice-input-section .subtitle {
+  margin-top: 0.5rem;
+  font-size: 0.8em;
+  color: #666;
+}
+
+.audio-recorder {
+  margin: 1rem 0;
+}
+
+.audio-recorder button {
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.audio-player {
+  margin: 0.5rem 0;
+}
+
+.file-upload {
+  margin: 1rem 0;
+}
+
+.file-upload input {
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.transcribed-text {
+  background: #e3f2fd;
+  padding: 0.75rem;
+  border-radius: 5px;
+  margin: 0.5rem 0;
+}
+
+.example-prompts {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.example-prompts button {
+  text-align: left;
+  background: #f0f0f5;
+  color: #333;
+  padding: 0.75rem;
+}
+
+.example-prompts button:hover {
+  background: #e0e0e5;
+}
+
+.content-area {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.weather-suggestions-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1.5rem;
+}
+
+.weather-display {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.weather-display h3 {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.weather-icon {
+  margin: 1rem 0;
+}
+
+.weather-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.weather-details p {
+  margin: 0.25rem 0;
+  color: #555;
+}
+
+.suggestions-section {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.suggestions-section h3 {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.chat-section {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.chat-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.chat-header h3 {
+  color: #333;
+}
+
+.chat-messages {
+  max-height: 400px;
+  overflow-y: auto;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+}
+
+.chat-input-container {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.chat-input-container input {
+  flex: 1;
+}
+
+.welcome-screen {
+  text-align: center;
+  padding: 3rem;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.welcome-screen h2 {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.welcome-screen p {
+  font-size: 1.2em;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.welcome-features {
+  margin-top: 2rem;
+  color: #666;
+  text-align: left;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.welcome-features p {
+  margin: 0.5rem 0;
+  font-size: 1em;
+}
+
+footer {
+  text-align: center;
+  color: #666;
+  padding: 1rem 2rem;
+  margin-top: auto;
+  border-top: 1px solid #ddd;
+}
+
+.footer-subtitle {
+  font-size: 0.9em;
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+    padding: 0 1rem 1rem 1rem;
+  }
+
+  .sidebar {
+    width: 100%;
+    position: static;
+  }
+
+  .weather-suggestions-container {
+    grid-template-columns: 1fr;
+  }
+
+  .header-container {
+    flex-direction: column;
+    padding: 1rem;
+  }
+}
+
